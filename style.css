@@ -1,8 +1,11 @@
 body {
-    background-color: #ffefa6;
+    background-color: #f1ac7e;
 }
 .bigPic{
     max-width: 33%;
+}
+.entering{
+    margin-top: 20px;
 }
 .top{
     max-width: 1100px;
@@ -16,6 +19,7 @@ body {
     display:grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
     justify-content: space-evenly;
+    align-items: baseline;
     grid-column-gap: 10px;
 }
 .zodiacButton {
@@ -25,12 +29,12 @@ body {
     background-color: transparent;
     cursor: pointer;
     outline: none;
-    opacity: .7;
+    opacity: .5;
     background-repeat: no-repeat;
   }
   
   .zodiacButton:hover {
-    opacity: 1;
+    opacity: .8;
   }
 
   #aphrodite {
