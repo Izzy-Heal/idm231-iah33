@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="style.css">
     <title>Zodiac</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
 </head>
 <body>
- <div class="top">
+    <audio id="sndAphrodite" src="sounds/aphrodite_english.mp3" preload="auto"></audio>
+    <audio id="sndApollo" src="sounds/apollo_english.mp3" preload="auto"></audio>
+    <audio id="sndAres" src="sounds/ares_english.mp3" preload="auto"></audio>
+    <audio id="sndArtemis" src="sounds/artemis_english.mp3" preload="auto"></audio>
+    <audio id="sndAthena" src="sounds/athena_english.mp3" preload="auto"></audio>
+    <audio id="sndDemeter" src="sounds/demeter_english.mp3" preload="auto"></audio>
+    <audio id="sndDionysus" src="sounds/dionysus_english.mp3" preload="auto"></audio>
+    <audio id="sndHades" src="sounds/hades_english.mp3" preload="auto"></audio>
+    <audio id="sndHera" src="sounds/hera_english.mp3" preload="auto"></audio>
+    <audio id="sndHermes" src="sounds/hermes_english.mp3" preload="auto"></audio>
+    <audio id="sndPoseidon" src="sounds/poseidon_english.mp3" preload="auto"></audio>
+    <audio id="sndZeus" src="sounds/zeus_english.mp3" preload="auto"></audio>
+
+    <div class="top">
      <h1 class="title">Greek Mythology Zodiac</h1>  
-     <p><input class="entering" id="fname" type="text" placeholder="First Name"></p>
      <p><input class="entering" id="bday" type="date"></p>
      <p><button class="entering" id="userSubmit">Submit</button></p>
+     <p><button class="entering" id="help">Help</button></p>
 </div>
-     <img class = "bigPic" src="portraits/Aphrodite.png" alt="aphrodite">
+<div class="middle">
+    <img id="display" src="portraits/blank.png" alt="blank">
+    <h1 id="title">How To:</h1>
+    <h2 id="dateRange">Either enter your birthday up top and click the submit button, or click one of the buttons below.</h2>
+    <p id= "info"></p>
+    
+</div>
 
 <div class = "buttons">
     <button type="button" class="zodiacButton" id="hermes"></button>
@@ -30,5 +52,6 @@
     <button type="button" class="zodiacButton" id="artemis"></button>
     <button type="button" class="zodiacButton" id="ares"></button>
 </div>
+<script src="zodiacJavascript.js"></script>
 </body>
 </html>
